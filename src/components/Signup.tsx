@@ -12,7 +12,7 @@ import Mobilebg from "../assets/images/Mobilebg.png";
 export const SignUp = () => {
   return (
     <>
-      <div className="w-full h-auto flex md:flex-row flex-col md:py-10 md:px-20 bg-[#EDEDED] relative">
+      <div className="w-full h-screen md:h-auto flex md:flex-row flex-col md:py-10 md:px-20 bg-[#EDEDED] relative">
         <img
           src={Cup}
           alt="Cup"
@@ -30,7 +30,7 @@ export const SignUp = () => {
           className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-auto h-auto"
         />
 
-        <div className="flex md:flex-row flex-col justify-between w-full relative">
+        <div className="flex md:flex-row flex-col  justify-between  relative">
           <div className="flex-1 flex-col px-2  justify-start md:gap-28 py-8 flex  items-center">
             <div className="grid w-[85px] h-[72-x] grid-cols-3 grid-rows-3 gap-4">
               <div className="w-5 h-5 bg-black rounded-full"></div>
@@ -45,7 +45,7 @@ export const SignUp = () => {
             </div>
 
             <div className="flex items-center justify-center flex-col gap-12">
-              <h1 className="md:text-6xl text-4xl  my-10 font-bold bg-gradient-to-r from-[#C91937] to-[#FDB646] text-transparent bg-clip-text  w-full text-center md:h-[122px] h-auto ">
+              <h1 className="md:text-6xl text-4xl  my-10 font-bold bg-gradient-to-r  from-[#C91937] to-[#FDB646] text-transparent bg-clip-text  w-full text-center md:h-[122px] h-auto ">
                 Sign up with your identity provider
               </h1>
 
@@ -71,7 +71,7 @@ export const SignUp = () => {
               </div>
             </div>
           </div>
-          <div className="hidden md:flex flex-col">
+          <div className="hidden md:flex  flex-col">
             <img
               src={Bg1}
               alt="b"
