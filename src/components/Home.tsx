@@ -1,3 +1,4 @@
+import { HeroSection } from "./HeroSection"
 import { Navbar } from "./Navbar"
 
  
@@ -5,6 +6,7 @@ import { Navbar } from "./Navbar"
    return (
      <div>
         <Navbar />
+        <HeroSection />
      </div>
    )
  }
