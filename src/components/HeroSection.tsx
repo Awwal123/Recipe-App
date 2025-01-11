@@ -2,6 +2,9 @@ import Pizza from "../assets/images/Pizza.png";
 import PineApple from "../assets/images/PineApple.png";
 import Cup from "../assets/images/Cup2.png";
 import Niddle from "../assets/images/Niddle.png";
+import Github from "../assets/images/git.png";
+import Twitter from "../assets/images/Twitter.png";
+import din from "../assets/images/linkdin.png";
 import { Link } from "react-router-dom";
 
 export const HeroSection = () => {
@@ -44,7 +47,25 @@ export const HeroSection = () => {
               Explore
             </div>
           </div>
+
+          <div className="flex mt-20 items-center w-[100%] gap-10">
+            <img src={Twitter} alt="" />
+            <img src={Github} alt="" />
+
+            <div className="w-[45px] h-[45px] rounded-full p-[2px] bg-gradient-to-r from-red-500 to-yellow-500">
+              <div className="w-full h-full flex items-center justify-center rounded-full bg-white">
+                <img
+                  src={din}
+                  alt=""
+                  className=""
+                />
+              </div>
+            </div>
+
+            <hr className="flex-grow border-2 border-yellow-500" />
+          </div>
         </div>
+
         <div>
           <img
             src={Pizza}
