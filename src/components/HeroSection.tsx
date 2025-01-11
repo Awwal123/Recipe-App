@@ -2,6 +2,7 @@ import Pizza from "../assets/images/Pizza.png";
 import PineApple from "../assets/images/PineApple.png";
 import Cup from "../assets/images/Cup2.png";
 import Niddle from "../assets/images/Niddle.png";
+import { Link } from "react-router-dom";
 
 export const HeroSection = () => {
   return (
@@ -28,13 +29,20 @@ export const HeroSection = () => {
             <h1 className="md:text-6xl text-4xl  font-bold bg-gradient-to-r  from-[#C91937] to-[#FDB646] text-transparent bg-clip-text  w-full text-center md:h-[122px] h-auto ">
               Far from home?
             </h1>
-            <p className="text-2xl -mt-9">we got you, checkout recipes from home chef's</p>
+            <p className="text-2xl -mt-9">
+              we got you, checkout recipes from home chef's
+            </p>
           </div>
 
-          <div className="flex justify-between gap-7">
-                <div className="flex items-center cursor-pointer justify-center rounded-tl-3xl shadow-custom rounded-br-3xl  bg-[#C91937] text-white w-[149px] h-[47px]">
-                    Register
-                </div>
+          <div className="flex justify-between gap-16">
+            <Link to="/signup">
+              <div className="flex items-center cursor-pointer justify-center rounded-tl-3xl shadow-custom rounded-br-3xl  bg-[#C91937] text-white w-[149px] h-[47px]">
+                Register
+              </div>
+            </Link>
+            <div className="flex items-center cursor-pointer justify-center rounded-tl-3xl shadow-custom rounded-br-3xl  bg-[#FDB646] text-white w-[149px] h-[47px]">
+              Explore
+            </div>
           </div>
         </div>
         <div>
