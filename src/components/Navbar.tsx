@@ -39,28 +39,38 @@ export const Navbar = () => {
 
         {/* Navbar for Small Devices */}
         {isNavOpen && (
-          <div className="absolute top-0 right-0 h-screen w-[75%] bg-slate-500 text-white p-5 md:hidden">
-            <div className="flex justify-end">
-             <button
-              className="text-red-700 w-5 h-5 text-3xl"
-              onClick={tooggleNavbar}
-            >
-              X
-            </button>
+          <div className="absolute top-0 right-0 h-screen w-[100%] z-50 bg-gradient-to-b from-red-500 to-yellow-500 text-black  md:hidden">
+            <div className="flex p-5 justify-end">
+              <button
+                className="text-red-700 w-5 h-5 text-3xl"
+                onClick={tooggleNavbar}
+              >
+                X
+              </button>
             </div>
-
-            <p className="mb-4">Home</p>
-            <p className="mb-4">Explore</p>
-            <p className="mb-4">About</p>
-            <p className="mb-4">Profile</p>
-           
+            <div className="flex flex-col gap-5 mt-10 justify-center items-center">
+              <div className="flex flex-col w-full items-center ">
+              <p className="mb-4">Home</p>
+              <hr className="w-full -mt-3 border-gray-200 border-2"/>
+              </div>
+              <div className="flex flex-col w-full items-center ">
+              <p className="mb-4">Explore</p>
+              <hr className="w-full -mt-3 border-gray-200 border-2"/>
+              </div>
+              <div className="flex flex-col w-full items-center ">
+              <p className="mb-4">About</p>
+              <hr className="w-full -mt-3 border-gray-200 border-2"/>
+              </div>
+              <div className="flex flex-col w-full items-center ">
+              <p className="mb-4">Profile</p>
+              <hr className="w-full -mt-3 border-gray-200 border-2"/>
+              </div>
+            </div>
           </div>
         )}
-
-        
       </div>
       <div className="md:pl-28 bg-[#EDEDED]">
-      <hr className="w-full border-2 border-yellow-400" />
+        <hr className="w-full border-2 border-yellow-400" />
       </div>
     </>
   );
