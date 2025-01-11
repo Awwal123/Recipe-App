@@ -23,14 +23,28 @@ export const HeroSection = () => {
         className="absolute right-1/3 top-40 transform -translate-y-1/2 w-auto h-auto"
       />
       <div className="flex justify-between md:py-7 relative">
-        <div>
-            Ameer
+        <div className="flex flex-col items-center gap-20 justify-center">
+          <div className="flex flex-col">
+            <h1 className="md:text-6xl text-4xl  font-bold bg-gradient-to-r  from-[#C91937] to-[#FDB646] text-transparent bg-clip-text  w-full text-center md:h-[122px] h-auto ">
+              Far from home?
+            </h1>
+            <p className="text-2xl -mt-9">we got you, checkout recipes from home chef's</p>
+          </div>
+
+          <div className="flex justify-between gap-7">
+                <div className="flex items-center cursor-pointer justify-center rounded-tl-3xl shadow-custom rounded-br-3xl  bg-[#C91937] text-white w-[149px] h-[47px]">
+                    Register
+                </div>
+          </div>
         </div>
         <div>
-            <img src={Pizza} alt="" />
+          <img
+            src={Pizza}
+            alt="pizza"
+            className="w-[463px] h-screen rounded-tl-[50px] rounded-br-[50px]"
+          />
         </div>
       </div>
     </div>
-    
   );
 };
