@@ -1,3 +1,4 @@
+import { CheckOut } from "./CheckOut"
 import { HeroSection } from "./HeroSection"
 import { Navbar } from "./Navbar"
 
@@ -7,6 +8,7 @@ import { Navbar } from "./Navbar"
      <div>
         <Navbar />
         <HeroSection />
+        <CheckOut />
      </div>
    )
  }
