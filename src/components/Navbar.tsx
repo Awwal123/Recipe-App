@@ -11,7 +11,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <div className="px-5 py-5 md:py-7 md:px-28 bg-[#EDEDED]">
+      <div className="px-5 py-5 md:py-7 md:px-28 ">
         <div className="flex justify-between">
           <div className="flex w-full md:w-auto justify-between md:justify-start">
             <h1 className="font-bold text-2xl">CookBooks</h1>
@@ -69,7 +69,7 @@ export const Navbar = () => {
           </div>
         )}
       </div>
-      <div className="md:pl-28 bg-[#EDEDED]">
+      <div className="md:pl-28 ">
         <hr className="w-full border-2 border-yellow-400" />
       </div>
     </>

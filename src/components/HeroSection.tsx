@@ -9,7 +9,8 @@ import { Link } from "react-router-dom";
 
 export const HeroSection = () => {
   return (
-    <div className=" py-5 md:py-7  md:px-28 w-full h-auto bg-[#EDEDED]  relative">
+    <div className="pb-14 z-10">
+    <div className=" py-5 md:py-7  md:px-28 w-full h-auto   relative">
       <img
         src={Cup}
         alt="Cup"
@@ -65,15 +66,15 @@ export const HeroSection = () => {
             <hr className="flex-grow hidden md:block border-2 border-yellow-500" />
           </div>
         </div>
-
-        <div>
+      
           <img
             src={Pizza}
             alt="pizza"
             className="md:w-[463px] w-full md:h-screen h-auto md:rounded-tl-[50px] md:rounded-br-[50px]"
           />
-        </div>
+      
       </div>
+    </div>
     </div>
   );
 };
