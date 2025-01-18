@@ -83,24 +83,32 @@ export const CheckOut = () => {
           </div>
       </div>
 
-      <div className="flex py-6 mt-24  pl-14 gap-10">
-        {recipes.map((recipe) => (
-           <div key={recipe.id} className="flex flex-col gap-5 px-3 w-[355px] h-[348px] rounded-tl-[50px] rounded-tr-3xl rounded-bl-3xl rounded-br-[50px] bg-gradient-to-b from-[#ee9daa] to-[#F5D199] items-center">
-           <img src={recipe.imageUrl} alt="" className="w-[199px] h-[199px] rounded-full -mt-28" />
-             
-             <h2 className="text-3xl font-semibold">{recipe.name}</h2>
-             <div className="flex w-full gap-5 justify-between">
-               <p className="">Type: {recipe.type}</p>
-               <p>{recipe.duration}</p>
-             </div>
-   
-             <p className="font-medium  text-base">{recipe.description}</p>
-           </div>
-
+      <div className="overflow-hidden mt-10 w-full">
+      <div
+        className="flex py-6 mt-24 animate-scroll gap-10"
+        style={{ width: `${recipes.length * 2 * (355 + 40)}px` }} 
+      >
+        {recipes.concat(recipes).map((recipe, index) => (
+          <div
+            key={index}
+            className="flex flex-col gap-5 px-3 w-[355px] h-[348px] rounded-tl-[50px] rounded-tr-3xl rounded-bl-3xl rounded-br-[50px] bg-gradient-to-b from-[#ee9daa] to-[#F5D199] items-center flex-shrink-0"
+          >
+            <img
+              src={recipe.imageUrl}
+              alt=""
+              className="w-[199px] h-[199px] rounded-full -mt-28"
+            />
+            <h2 className="text-3xl font-semibold">{recipe.name}</h2>
+            <div className="flex w-full gap-5 justify-between">
+              <p>Type: {recipe.type}</p>
+              <p>{recipe.duration}</p>
+            </div>
+            <p className="font-medium text-base">{recipe.description}</p>
+          </div>
         ))}
-       
       </div>
     </div>
-    </div>
+  </div>
+</div>
   );
 };
