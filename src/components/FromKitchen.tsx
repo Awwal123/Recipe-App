@@ -9,8 +9,8 @@ export const Kitchen = () => {
   return (
     <div className="py-20 md:py-20 md:px-28 w-full h-auto bg-[#EBE2E4] relative">
       {/* Background Decorative Icons */}
-      <img src={Peer} alt="Peer" className="absolute bottom-[10%] right-[20%] w-14 md:w-[120px]" />
-      <img src={LeftPizza} alt="Left Pizza" className="absolute top-[40%] hidden md:block right-[0%] w-[208px]" />
+      <img src={Peer} alt="Peer" className="absolute top-3 md:bottom-[10%] right-5 m:right-[20%] w-14 md:w-[120px]" />
+      <img src={LeftPizza} alt="Left Pizza" className="absolute md:top-[40%] bottom-[10%]  right-7 md:right-[0%]  w-20 md:w-[208px]" />
       <img src={RightPizza} alt="Right Pizza" className="absolute top-[50%] md:top-[60%] md:left-[40%] w-20 md:w-[208px]" />
       <img src={Cake} alt="Cake" className="absolute top-[5%] w-16 md:top-[10%] left-2 md:left-[45%] md:w-[183px]" />
 
