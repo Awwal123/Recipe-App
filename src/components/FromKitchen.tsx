@@ -15,7 +15,7 @@ export const Kitchen = () => {
       <img src={Cake} alt="Cake" className="absolute top-[10%] left-[45%] w-[183px]" />
 
       {/* Main Content */}
-      <div className="flex flex-col md:flex-row justify-center gap-52 relative items-center">
+      <div className="flex flex-col md:flex-row justify-center gap-5 md:gap-52 relative items-center">
         {/* Image Section */}
         <img src={Burger} alt="Burger" className="w-[300px] md:w-[400px] md:rounded-tl-[50px] md:rounded-br-[50px] shadow-lg" />
 
