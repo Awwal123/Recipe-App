@@ -44,9 +44,11 @@ export const HeroSection = () => {
                 Register
               </div>
             </Link>
+            <Link to={"/recipes"}>
             <div className="flex items-center cursor-pointer justify-center rounded-tl-3xl shadow-custom rounded-br-3xl  bg-[#FDB646] text-white w-[149px] h-[47px]">
               Explore
             </div>
+            </Link>
           </div>
 
           <div className="flex  my-5 md:mt-20 items-center justify-center w-[100%] gap-10">

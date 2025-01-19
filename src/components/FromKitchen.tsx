@@ -4,6 +4,7 @@ import Peer from "../assets/images/Peer.png";
 import LeftPizza from "../assets/images/LPizza.png";
 import RightPizza from "../assets/images/RPizza.png";
 import Cake from "../assets/images/Cake.png";
+import { Link } from "react-router-dom";
 
 export const Kitchen = () => {
   return (
@@ -33,12 +34,12 @@ export const Kitchen = () => {
 
           {/* Buttons */}
           <div className="flex gap-4 my-5 pb-8">
-            <button className="bg-[#C91937] text-white py-2 px-6 rounded-tl-2xl rounded-br-2xl hover:bg-[#A3142B] font-semibold">
+        <Link to={"/signup"}>    <button className="bg-[#C91937] text-white py-2 px-6 rounded-tl-2xl rounded-br-2xl hover:bg-[#A3142B] font-semibold">
               Register
-            </button>
-            <button className="bg-[#FDB646] text-white py-2 px-6 rounded-tl-2xl rounded-br-2xl hover:bg-[#E69C32] font-semibold">
+            </button> </Link>
+      <Link to={"/recipes"}><button className="bg-[#FDB646] text-white py-2 px-6 rounded-tl-2xl rounded-br-2xl hover:bg-[#E69C32] font-semibold">
               Explore
-            </button>
+            </button></Link>
           </div>
         </div>
       </div>
