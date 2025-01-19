@@ -9,8 +9,8 @@ import { Link } from "react-router-dom";
 
 export const HeroSection = () => {
   return (
-    <div className="pb-14 z-10">
-    <div className=" py-5 md:py-7  md:px-28 w-full h-auto   relative">
+    <div className="md:pb-14 z-10">
+    <div className="pt-5  md:py-7  md:px-28 w-full h-auto   relative">
       <img
         src={Cup}
         alt="Cup"

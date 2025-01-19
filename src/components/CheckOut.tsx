@@ -48,30 +48,30 @@ const recipes = [
 
 export const CheckOut = () => {
   return (
-    <div className="pt-7 ">
-    <div className="py-5  bg-[#EDEDED] w-full h-auto  relative">
+    <div className="md:pt-7 ">
+    <div className=" py-5  bg-[#EDEDED] w-full h-auto  relative">
       <img
         src={Cup}
         alt="Cup"
-        className="absolute left-80 top-72 transform -translate-y-1/2 w-auto h-auto"
+        className="absolute hidden md:block left-80 top-72 transform -translate-y-1/2 w-auto h-auto"
       />
       <img
         src={Tomato}
         alt="bg"
-        className="absolute top-60 right-10 transform -translate-x-1/2 w-auto z-30"
+        className="absolute hidden md:block top-60 right-10 transform -translate-x-1/2 w-auto z-30"
       />
       <img
         src={Mushroom}
         alt="bg"
-        className="absolute top-36 right-36 transform -translate-x-1/2 w-auto h-auto"
+        className="absolute hidden md:block top-36 right-36 transform -translate-x-1/2 w-auto h-auto"
       />
       <img
         src={Tomato}
         alt=""
-        className="absolute left-36 top-36 transform -translate-y-1/2 w-auto h-auto"
+        className="absolute hidden md:block left-36 top-36 transform -translate-y-1/2 w-auto h-auto"
       />
      
-      <div className="flex justify-center items-center   md:flex-row flex-col md:py-7 ">
+      <div className="flex justify-center items-center  md:flex-row flex-col md:py-7 ">
       <div className="flex flex-col gap-8">
             <h1 className="md:text-6xl text-4xl  font-bold bg-gradient-to-r  from-[#C91937] to-[#FDB646] text-transparent bg-clip-text  w-full text-center md:h-[122px] h-auto ">
             Check out new recipe’s
