@@ -46,12 +46,12 @@ export default function Recipes() {
     <Navbar />
     <main className="min-h-screen  py-5 md:py-7 md:px-16">
       {/* Hero Section */}
-      <div className="relative mb-24 h-[500px] w-full">
+      <div className="relative mb-24 md:h-[500px] w-full">
         <img
           src={Bg}
           alt="Delicious dish in a pan"
         //   fill
-          className="h-[500px] w-full brightness-75"
+          className="md:h-[500px] h-auto w-full brightness-75"
         />
         <div className="absolute inset-0 flex flex-col justify-center px-6 text-white">
           <h1 className="text-3xl font-bold mb-2">Unleash your inner chef</h1>
@@ -65,12 +65,12 @@ export default function Recipes() {
 
       {/* Recipe Grid */}
       <div className="container mx-auto px-4 py-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           {Array(15)
             .fill(null)
             .map((_, index) =>
               recipes.map((recipe) => (
-                <div key={`${recipe.id}-${index}`} className="relative h-[320px] w-[247px] rounded-tl-[40px] overflow-hidden">
+                <div key={`${recipe.id}-${index}`} className="relative h-[320px] w-full md:w-[247px] rounded-tl-[40px] overflow-hidden">
                   <div className="relative  bg-red-500">
                     <img src={recipe.image || "/placeholder.svg"} alt={recipe.name} className="object-cover h-[290px]" />
                   </div>
