@@ -44,14 +44,14 @@ export default function Recipes() {
   return (
     <>
     <Navbar />
-    <main className="min-h-screen  py-5 md:py-7 md:px-28">
+    <main className="min-h-screen  py-5 md:py-7 md:px-16">
       {/* Hero Section */}
-      <div className="relative mb-24 h-[300px] w-full">
+      <div className="relative mb-24 h-[500px] w-full">
         <img
           src={Bg}
           alt="Delicious dish in a pan"
         //   fill
-          className="h-[400px] w-full brightness-75"
+          className="h-[500px] w-full brightness-75"
         />
         <div className="absolute inset-0 flex flex-col justify-center px-6 text-white">
           <h1 className="text-3xl font-bold mb-2">Unleash your inner chef</h1>
