@@ -1,6 +1,6 @@
 import { CheckOut } from "./components/CheckOut";
 import { Home } from "./components/Home";
-import { Recipes } from "./components/Recipes";
+import  Recipes  from "./components/Recipes";
 import { SignUp } from "./components/Signup";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
