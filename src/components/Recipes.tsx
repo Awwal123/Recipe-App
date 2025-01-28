@@ -4,6 +4,7 @@ import { Navbar } from "./Navbar"
 import Cookie from "../assets/images/Cookie.png"
 import Egg from "../assets/images/Egg.png"
 import Morta from "../assets/images/Mortal.png"
+import Bg from "../assets/images/Recipebg.png"
 
 interface Recipe {
   id: number
@@ -43,14 +44,14 @@ export default function Recipes() {
   return (
     <>
     <Navbar />
-    <main className="min-h-screen ">
+    <main className="min-h-screen  py-5 md:py-7 md:px-28">
       {/* Hero Section */}
-      <div className="relative h-[300px] w-full">
+      <div className="relative mb-24 h-[300px] w-full">
         <img
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/img-CAWgoM30DoYSN4nxruwK2o0Cej8Jfs.png"
+          src={Bg}
           alt="Delicious dish in a pan"
         //   fill
-          className="object-cover brightness-75"
+          className="h-[400px] w-full brightness-75"
         />
         <div className="absolute inset-0 flex flex-col justify-center px-6 text-white">
           <h1 className="text-3xl font-bold mb-2">Unleash your inner chef</h1>
