@@ -45,7 +45,6 @@ export default function Recipes() {
     <>
     <Navbar />
     <main className="min-h-screen  py-5 md:py-7 md:px-16">
-      {/* Hero Section */}
       <div className="relative mb-24 md:h-[500px] w-full">
         <img
           src={Bg}
@@ -62,8 +61,6 @@ export default function Recipes() {
           </p>
         </div>
       </div>
-
-      {/* Recipe Grid */}
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           {Array(15)
