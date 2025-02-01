@@ -9,15 +9,13 @@ import { Link } from "react-router-dom";
 export const Kitchen = () => {
   return (
     <div className="py-20 md:py-20 md:px-28 w-full h-auto bg-[#EBE2E4] relative">
-      {/* Background Decorative Icons */}
       <img src={Peer} alt="Peer" className="absolute top-3 md:bottom-[10%] right-5 m:right-[20%] w-14 md:w-[120px]" />
       <img src={LeftPizza} alt="Left Pizza" className="absolute md:top-[40%] bottom-[10%]  right-7 md:right-[0%]  w-20 md:w-[208px]" />
       <img src={RightPizza} alt="Right Pizza" className="absolute top-[50%] md:top-[60%] md:left-[40%] w-20 md:w-[208px]" />
       <img src={Cake} alt="Cake" className="absolute top-[5%] w-16 md:top-[10%] left-2 md:left-[45%] md:w-[183px]" />
 
-      {/* Main Content */}
       <div className="flex flex-col md:flex-row w-full md:justify-center gap-5 md:gap-52 relative items-center">
-        {/* Image Section */}
+       
         <img src={Burger} alt="Burger" className="w-[80vw] h-[400px]  md:h-auto md:w-[400px] rounded-tl-[50px] rounded-br-[50px] shadow-lg" />
 
         {/* Text Section */}
