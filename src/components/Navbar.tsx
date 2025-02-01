@@ -15,16 +15,14 @@ export const Navbar = () => {
         <div className="flex justify-between">
           <div className="flex w-full md:w-auto justify-between md:justify-start">
             <h1 className="font-bold text-2xl">CookBooks</h1>
-            {/* Hamburger Menu */}
             <img
               src={Hamburger}
               alt=""
               className="cursor-pointer block md:hidden"
-              onClick={tooggleNavbar} // Fixed
+              onClick={tooggleNavbar} 
             />
           </div>
 
-          {/* Navbar for Larger Devices */}
           <div className="hidden md:flex justify-between items-center w-[40%] gap-14">
             <div className="flex gap-28">
               <p className="text-base">Home</p>
@@ -36,8 +34,6 @@ export const Navbar = () => {
             </div>
           </div>
         </div>
-
-        {/* Navbar for Small Devices */}
         {isNavOpen && (
           <div className="absolute top-0 right-0 h-screen w-[100%] z-50 bg-gradient-to-b from-red-500 to-yellow-500 text-black  md:hidden">
             <div className="flex p-5 justify-end">
