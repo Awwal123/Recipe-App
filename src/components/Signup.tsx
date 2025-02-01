@@ -23,7 +23,6 @@ export const SignUp = () => {
           alt="Cake"
           className="absolute right-1/3 top-1/2 transform -translate-y-1/2 w-auto h-auto"
         />
-        {/* Niddle Image */}
         <img
           src={Niddle}
           alt="Niddle"
