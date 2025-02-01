@@ -38,7 +38,7 @@ const recipes = [
    },
    {
     id: 5,
-    name: "Caprese Salad",
+    name: "Ameer",
     type: "Starter",
     duration: "15 minutes",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
@@ -48,7 +48,7 @@ const recipes = [
 
 export const CheckOut = () => {
   return (
-    <div className="md:pt-7 ">
+    <div className="md:pt-7">
     <div className=" py-5  bg-[#EDEDED] w-full h-auto  relative">
       <img
         src={Cup}
