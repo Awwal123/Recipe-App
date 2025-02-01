@@ -2,7 +2,6 @@ export const Footer = () => {
     return (
       <div className="py-20 md:py-20 md:px-28 px-5 w-full h-auto bg-[#F7F3F4] text-gray-700 relative">
         <div className="flex flex-col md:flex-row justify-between gap-10 md:gap-20">
-          {/* Left Section */}
           <div className="flex-1">
             <h2 className="text-2xl font-bold">CookBooks</h2>
             <p className="mt-4 text-sm leading-relaxed">
@@ -13,8 +12,7 @@ export const Footer = () => {
               and let your mood inspire your next culinary adventure. Happy cooking!
             </p>
           </div>
-  
-          {/* Center Section */}
+
           <div className="flex-1">
             <h3 className="text-lg font-semibold">Navigation</h3>
             <ul className="mt-4 space-y-2 text-sm">
@@ -24,7 +22,7 @@ export const Footer = () => {
             </ul>
           </div>
   
-          {/* Right Section */}
+    
           <div className="flex-1">
             <h3 className="text-lg font-semibold">Contact Us</h3>
             <p className="mt-4 text-sm">
@@ -36,10 +34,10 @@ export const Footer = () => {
           </div>
         </div>
   
-        {/* Divider */}
+
         <div className="mt-10 border-t border-[#FDB646]"></div>
   
-        {/* Footer Bottom */}
+      
         <div className="mt-5 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
           <p>© 2023 CookBooks. All Rights Reserved.</p>
           <p>
