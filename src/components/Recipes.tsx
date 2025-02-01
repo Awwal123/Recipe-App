@@ -53,7 +53,7 @@ export default function Recipes() {
           className="md:h-[500px] h-auto w-full brightness-75"
         />
         <div className="absolute inset-0 flex flex-col justify-center px-6 text-white">
-          <h1 className="text-3xl font-bold mb-2">Unleash your inner chef</h1>
+          <h1 className="text-3xl font-bold mb-2">Unleash your Inner Chef</h1>
           <p className="text-lg opacity-90">
             Discover a world of culinary delights —
             <br />
@@ -69,7 +69,7 @@ export default function Recipes() {
               recipes.map((recipe) => (
                 <div key={`${recipe.id}-${index}`} className="relative h-[320px] w-full md:w-[247px] rounded-tl-[40px] overflow-hidden">
                   <div className="relative  bg-red-500">
-                    <img src={recipe.image || "/placeholder.svg"} alt={recipe.name} className="object-cover h-[290px]" />
+                    <img src={recipe.image || "/placeholder.svg"} alt={recipe.name} className="object-cover h-[290px]"/>
                   </div>
                   <div className="absolute bottom-0 rounded-br-[40px] left-0 right-0 bg-orange-400 p-3">
                     <h3 className="font-semibold text-sm text-black">{recipe.name}</h3>
