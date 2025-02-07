@@ -2,9 +2,10 @@
 import { Clock } from "lucide-react"
 import { Navbar } from "./Navbar"
 import Cookie from "../assets/images/Cookie.png"
-import Egg from "../assets/images/Egg.png"
-import Morta from "../assets/images/Mortal.png"
-import Bg from "../assets/images/Recipebg.png"
+
+import Bg from "../assets/images/Bg.jpg"
+import Chicken from "../assets/images/Chicken.jpg"
+import Chocolate from "../assets/images/Chocolate.jpg"
 
 interface Recipe {
   id: number
@@ -20,23 +21,18 @@ const recipes: Recipe[] = [
     time: "10-15 min",
     image: Cookie
   },
-  {
-    id: 2,
-    name: "Egg Toast",
-    time: "8-10 min",
-    image: Egg,
-  },
+ 
   {
     id: 3,
     name: "Nachos With Mayo",
     time: "20-30 min",
-    image: Morta
+    image: Chicken
   },
   {
     id: 4,
     name: "Blueberry Waffle",
     time: "10-15 min",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-CAWgoM30DoYSN4nxruwK2o0Cej8Jfs.png",
+    image: Chocolate
   },
 ]
 
@@ -50,16 +46,16 @@ export default function Recipes() {
           src={Bg}
           alt="Delicious dish in a pan"
         //   fill
-          className="md:h-[500px] h-auto w-full brightness-75"
+          className="md:h-[500px] h-auto w-full"
         />
-        <div className="absolute inset-0 flex flex-col justify-center px-6 text-white">
+        {/* <div className="absolute inset-0  flex flex-col justify-center px-6 text-white">
           <h1 className="text-3xl font-bold mb-2">Unleash your Inner Chef</h1>
           <p className="text-lg opacity-90">
             Discover a world of culinary delights —
             <br />
             recipes to inspire your next masterpiece
           </p>
-        </div>
+        </div> */}
       </div>
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
@@ -69,7 +65,7 @@ export default function Recipes() {
               recipes.map((recipe) => (
                 <div key={`${recipe.id}-${index}`} className="relative h-[320px] w-full md:w-[247px] rounded-tl-[40px] overflow-hidden">
                   <div className="relative  bg-red-500">
-                    <img src={recipe.image || "/placeholder.svg"} alt={recipe.name} className="object-cover h-[290px]"/>
+                    <img src={recipe.image || "/placeholder.svg"} alt={recipe.name} className="object-cover w-full h-[290px]"/>
                   </div>
                   <div className="absolute bottom-0 rounded-br-[40px] left-0 right-0 bg-orange-400 p-3">
                     <h3 className="font-semibold text-sm text-black">{recipe.name}</h3>
