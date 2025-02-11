@@ -1,8 +1,7 @@
-// import Image from "next/image"
+
 import { Clock } from "lucide-react"
 import { Navbar } from "./Navbar"
 import Cookie from "../assets/images/Cookie.png"
-
 import Bg from "../assets/images/Bg.jpg"
 import Chicken from "../assets/images/Chicken.jpg"
 import Chocolate from "../assets/images/Chocolate.jpg"
