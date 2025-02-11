@@ -37,7 +37,6 @@ export const HeroSection = () => {
                 we got you, checkout recipes from home chef's
               </p>
             </div>
-
             <div className="flex md:flex-row flex-col justify-between gap-10 md:gap-16">
               <Link to="/signup">
                 <div className="flex items-center cursor-pointer justify-center rounded-tl-3xl shadow-custom rounded-br-3xl  bg-[#C91937] text-white w-[149px] h-[47px]">
@@ -50,21 +49,17 @@ export const HeroSection = () => {
                 </div>
               </Link>
             </div>
-
             <div className="flex  my-5 md:mt-20 items-center justify-center w-[100%] gap-10">
               <img src={Twitter} alt="" />
               <img src={Github} alt="" />
-
               <div className="w-[45px] h-[45px] rounded-full p-[2px] bg-gradient-to-r from-red-500 to-yellow-500">
                 <div className="w-full h-full flex items-center justify-center rounded-full bg-white">
                   <img src={din} alt="" className="" />
                 </div>
               </div>
-
               <hr className="flex-grow hidden md:block border-2 border-yellow-500" />
             </div>
           </div>
-
           <img
             src={Pizza}
             alt="pizza"
