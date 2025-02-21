@@ -16,17 +16,16 @@ export const HeroSection = () => {
           alt="Cup"
           className="absolute top-96 right-11 w-[110px] h-auto"
         />
-        <img
+        {/* <img
           src={Niddle}
           alt="Niddle"
           className="absolute bottom-60 right-96 transform -translate-x-1/2 w-auto h-auto"
         />
-
         <img
           src={PineApple}
           alt="Cake"
           className="absolute right-1/3 top-40 transform -translate-y-1/2 w-auto h-auto"
-        />
+        /> */}
         <div className="flex justify-between md:flex-row flex-col md:py-7 relative">
           <div className="flex flex-col items-center gap-10 md:gap-20 justify-center">
             <div className="flex flex-col">
