@@ -67,7 +67,7 @@ export const Navbar = () => {
       </div>
       <div className="md:pl-28 ">
         <hr className="w-full border-2 border-yellow-400" />
-        <hr className="w-full border-2 border-yellow-400" />
+        
       </div>
     </>
   );

@@ -5,6 +5,9 @@ import Cookie from "../assets/images/Cookie.png"
 import Bg from "../assets/images/Bg.jpg"
 import Chicken from "../assets/images/Chicken.jpg"
 import Chocolate from "../assets/images/Chocolate.jpg"
+import Recipe4 from "../assets/images/Recipe4.jpg"
+import Recipe5 from "../assets/images/Recipe5.jpg"
+import Recipe6 from "../assets/images/Recipe6.jpg"
 
 interface Recipe {
   id: number
@@ -33,6 +36,24 @@ const recipes: Recipe[] = [
     time: "10-15 min",
     image: Chocolate
   },
+  {
+    id: 5,
+    name: "Blueberry Waffle",
+    time: "10-15 min",
+    image: Recipe4
+  },
+  {
+    id: 6,
+    name: "Blueberry Waffle",
+    time: "10-15 min",
+    image: Recipe5
+  },
+  {
+    id: 7,
+    name: "Blueberry Waffle",
+    time: "10-15 min",
+    image: Recipe6
+  },
 ]
 
 export default function Recipes() {
@@ -47,14 +68,14 @@ export default function Recipes() {
         //   fill
           className="md:h-[500px] h-auto w-full"
         />
-        {/* <div className="absolute inset-0  flex flex-col justify-center px-6 text-white">
+        <div className="absolute inset-0  flex flex-col justify-center px-6 text-white">
           <h1 className="text-3xl font-bold mb-2">Unleash your Inner Chef</h1>
           <p className="text-lg opacity-90">
             Discover a world of culinary delights —
             <br />
             recipes to inspire your next masterpiece
           </p>
-        </div> */}
+        </div>
       </div>
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
