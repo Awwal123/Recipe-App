@@ -68,7 +68,7 @@ export default function Recipes() {
         //   fill
           className="md:h-[500px] h-auto w-full"
         />
-        <div className="absolute inset-0  flex flex-col justify-center px-6 text-white">
+        <div className="absolute inset-0 flex flex-col justify-center px-6 text-white">
           <h1 className="text-3xl font-bold mb-2">Unleash your Inner Chef</h1>
           <p className="text-lg opacity-90">
             Discover a world of culinary delights —
