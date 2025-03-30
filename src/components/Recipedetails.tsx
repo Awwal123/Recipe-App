@@ -1,4 +1,4 @@
-export const Recipedetails = () => {
+export const RecipeDetails = () => {
   return (
     <div>Recipedetails</div>
   )
