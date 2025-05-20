@@ -1,6 +1,6 @@
 import { CheckOut } from "./components/CheckOut";
 import { Home } from "./components/Home";
-import { RecipeDetails } from "./components/Recipedetails";
+// import { RecipeDetails } from "./components/Recipedetails";
 import Recipes from "./components/Recipes";
 import { SignUp } from "./components/Signup";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -14,7 +14,7 @@ function App() {
             <Route path="/signup" element={<SignUp />} />
             <Route path="/check-out" element={<CheckOut />} />
             <Route path="/recipes" element={<Recipes />} />
-            <Route path="/recipe-details" element={<RecipeDetails />} />
+            {/* <Route path="/recipe-details" element={<RecipeDetails />} /> */}
           </Routes>
         </Router>
       </div>
