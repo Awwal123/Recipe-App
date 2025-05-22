@@ -21,6 +21,7 @@ export default function Recipes() {
     const fetchData = async () => {
       try {
         const data = await getRandomRecipes(1130);
+        console.log("Recipes", data)
         setRecipes(data);
       } catch (error) {
         console.error("Error fetching recipes:", error);
