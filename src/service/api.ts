@@ -19,4 +19,9 @@ export const getRandomRecipes = async (number = 30) => {
   });
 
   return response.data.recipes;
+
+};
+export const getRecipeDetails = async (id: string | number) => {
+  const response = await spoonacular.get(`/recipes/${id}/information`);
+  return response.data;
 };

@@ -2,34 +2,59 @@ import { Clock } from "lucide-react";
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
 import Recipe from "../assets/images/Burger.png";
+import { useLocation, useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { getRecipeDetails } from "../service/api";
 export const RecipeDetails = () => {
+  const { id } = useParams();
+  const location = useLocation();
+
+  const recipe = location.state?.recipe;
+  const [fallbackRecipe, setFallbackRecipe] = useState(null);
+
+useEffect(() => {
+  if (!recipe && id) {
+    const fetchRecipe = async () => {
+      try {
+        const data = await getRecipeDetails(id);
+        setFallbackRecipe(data);
+      } catch (err) {
+        console.error("Error fetching fallback recipe:", err);
+      }
+    };
+    fetchRecipe();
+  }
+}, [id, recipe]);
+
+ const displayRecipe = recipe || fallbackRecipe;
+
+  if (!displayRecipe) return <p>Loading recipe...</p>;
   return (
     <div>
       <Navbar />
-      <div className="max-w-7xl mx-auto p-6 font-sans bg-blue-200 ">
+      <div className="max-w-7xl mx-auto p-6 font-sans">
         <div className=" gap-6">
           <div className="space-y-6">
             <div className="flex md:justify-between md:flex-row flex-col">
-              <div>
-                <h1 className="text-2xl font-bold text-red-600">
-                  BlueBerry waffle
+              <div className="flex flex-col gap-4">
+                <h1 className="md:text-6xl text-4xl  font-bold bg-gradient-to-r  from-[#C91937] to-[#FDB646] text-transparent bg-clip-text  ">
+                 {displayRecipe.title}
                 </h1>
-                <p className="text-gray-700">by scott</p>
 
                 <div className="flex items-center mt-2 text-base text-gray-600">
                   <Clock className="w-8 h-8 mr-1" />
-                  <span>15-20 min</span>
+                  <span> Ready in: {displayRecipe.readyInMinutes} minutes </span>
                   <span className="mx-2">•</span>
                   <span>Difficulty: easy</span>
                 </div>
 
                 <p className="mt-4 italic text-2xl text-gray-800 font-bold">
-                  "Indulge in fluffy, golden waffles infused with bursts of
-                  juicy blueberries."
+                    Servings: {displayRecipe.servings}
                 </p>
               </div>
               <img src={Recipe} alt="img" className="w-[463px] h-[392px]" />
               <div></div>
+    
             </div>
 
             <div>
@@ -93,7 +118,6 @@ export const RecipeDetails = () => {
                 </li>
               </ol>
             </div>
-
           </div>
         </div>
       </div>

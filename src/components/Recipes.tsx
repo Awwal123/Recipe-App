@@ -1,10 +1,11 @@
-"use client"
+"use client";
 
-import { Clock, Search } from "lucide-react"
-import { useEffect, useState } from "react"
-import { Navbar } from "./Navbar"
+import { Clock, Search } from "lucide-react";
+import { useEffect, useState } from "react";
+import { Navbar } from "./Navbar";
 import { getRandomRecipes } from "../service/api";
-import Bg from "../assets/images/Bg.jpg"
+import Bg from "../assets/images/Bg.jpg";
+import { useNavigate } from "react-router-dom";
 
 interface Recipe {
   id: number;
@@ -16,12 +17,12 @@ interface Recipe {
 export default function Recipes() {
   const [recipes, setRecipes] = useState<Recipe[]>([]);
   const [searchTerm, setSearchTerm] = useState("");
-
+  const navigate = useNavigate();
   useEffect(() => {
     const fetchData = async () => {
       try {
         const data = await getRandomRecipes(1130);
-        console.log("Recipes", data)
+        console.log("Recipes", data);
         setRecipes(data);
       } catch (error) {
         console.error("Error fetching recipes:", error);
@@ -35,6 +36,10 @@ export default function Recipes() {
     const search = searchTerm.toLowerCase();
     return recipe.title.toLowerCase().includes(search);
   });
+
+  const handleReciepeClick = (recipe: any) => {
+    navigate(`/recipe-details/${recipe.id}`, { state: { recipe } });
+  };
 
   return (
     <>
@@ -50,7 +55,9 @@ export default function Recipes() {
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
           <div className="absolute left-0 md:left-20 top-1/2 -translate-y-1/2 px-4 md:px-14 w-full md:w-auto">
             <div className="p-4 rounded-md text-white max-w-md">
-              <h1 className="text-3xl font-bold mb-2">Unleash your Inner Chef</h1>
+              <h1 className="text-3xl font-bold mb-2">
+                Unleash your Inner Chef
+              </h1>
               <p className="text-lg mb-6">
                 Discover a world of culinary delights —
                 <br />
@@ -81,6 +88,7 @@ export default function Recipes() {
               {filteredRecipes.map((recipe) => (
                 <div
                   key={recipe.id}
+                  onClick={() => handleReciepeClick(recipe)}
                   className="relative h-[320px] w-full md:w-[247px] rounded-tl-[40px] overflow-hidden"
                 >
                   <img
@@ -109,4 +117,3 @@ export default function Recipes() {
     </>
   );
 }
-
