@@ -56,7 +56,6 @@ useEffect(() => {
               <div></div>
     
             </div>
-
             <div>
               <h2 className="font-bold text-gray-900 uppercase text-sm mb-2">
                 Ingredients
@@ -75,7 +74,6 @@ useEffect(() => {
                 <li>1 cup fresh blueberries</li>
               </ul>
             </div>
-
             <div>
               <h2 className="font-bold text-gray-900 uppercase text-sm mb-2">
                 Instructions
