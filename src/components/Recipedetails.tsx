@@ -8,7 +8,6 @@ import { getRecipeDetails } from "../service/api";
 export const RecipeDetails = () => {
   const { id } = useParams();
   const location = useLocation();
-
   const recipe = location.state?.recipe;
   const [fallbackRecipe, setFallbackRecipe] = useState(null);
 
