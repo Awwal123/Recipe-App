@@ -89,7 +89,7 @@ export default function Recipes() {
                 <div
                   key={recipe.id}
                   onClick={() => handleReciepeClick(recipe)}
-                  className="relative h-[320px] w-full md:w-[247px] rounded-tl-[40px] overflow-hidden"
+                  className="relative h-[320px] cursor-pointer w-full md:w-[247px] rounded-tl-[40px] overflow-hidden"
                 >
                   <img
                     src={recipe.image || "/placeholder.svg"}
