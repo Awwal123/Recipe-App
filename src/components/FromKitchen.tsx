@@ -1,4 +1,3 @@
-// import React from "react";
 import Burger from "../assets/images/Burger.png";
 import Peer from "../assets/images/Peer.png";
 import LeftPizza from "../assets/images/LPizza.png";
